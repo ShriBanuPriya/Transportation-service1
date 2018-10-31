@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
+body{
+font-family: 'Quattrocento Sans', sans-serif;
+font-weight: 600;
+color: #676767;
+line-height: 25px;
+}
+.container-fluid{
+  margin-bottom: 50px !important;
+}
+.transport-header{
+  margin-bottom: 0 !important;
+}
+.head-col{
+
+  background-color: #E45522;
+  color: white;
+
+}
+.head-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.circle{
+  color: white !important;
+  font-size: 10px !important;
+  margin: 0 20px;
+
+}
+.header{
+  line-height: 35px;
+}
+.header h2{
+  padding: 20px 0;
+}
+li{
+  list-style-type: none;
+}
+
+.get-btn{
+  background-color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  color: #2C2C2C;
+
+}
+.get-btn:hover{
+  color: #FC5B24;
+}
+.button{
+  height: 50px;
+  width: 80px;
+  color: white;
+  background-color: #E45522;
+  padding: 10px;
+ box-shadow: 5px 5px 10px #676767;
+
+}
+.button:hover{
+
+  opacity: .9;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.events {
+ position: sticky;
+  margin-bottom: 50px;
+  background-color: #F1F5F9;
+  padding: 30px;
+
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.item {
+
+  width: 180px;
+  height: 50px;
+  line-height: 30px;
+
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events li a{
+  color: #414141;
+}
+.events li a:hover{
+  opacity: .7;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list p{
+  padding-top: 12px;
+}
+
+
+.list .fa{
+  color: #C4C4C4 !important;
+}
+.fa:hover{
+  opacity: .6;
+}
+.explore{
+  width: 30%;
+  margin: 0 auto;
+}
+.explore h1{
+  color: #FC5B24;
+  text-align: center;
+}
+
+.explore p{
+  text-align: center;
+}
+.view-vehicles{
+margin: 50px 0;
+
+
+}
+
+.view-vehicles h3{
+  color: #333333;
+}
+.view-vehicles p{
+  text-align: justify;
+}
+
+
+
+
+.efficiency{
+  text-align: center;
+display: flex;
+
+
+}
+
+.efficiency h4{
+  padding: 10px;
+  color: #333333;
+}
+.efficient-2{
+
+  align-self: center;
+}
+.efficient-3{
+  align-self: flex-end;
+}
+.plan{
+background-color: #F1F5F9;
+padding: 20px;
+}
+.plan-events{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+ background-color: #F1F5F9;
+}
+.plan-head{
+  text-align: center;
+  color: #FC5B24;
+
+}
+.personal-groups{
+
+ margin: 20px;
+ text-align: center;
+ padding: 30px;
+ background-color: white;
+}
+.personal-groups img, .events-travel img{
+  width: 300px;
+
+}
+.personal-groups h3, .events-travel h3{
+  color: #333333;
+}
+.events-travel{
+ background-color: white;
+  margin: 20px;
+  text-align: center;
+  padding: 30px;
+}
+.group-list{
+  margin: 20px;
+}
+
+.group-list p{
+
+ text-align: left;
+}
+.facilites{
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+
+}
+.head-padding{
+ padding: 34px 0 !important;
+
+}
+.facility h4{
+  color: #333333;
+  padding: 20px;
+}
+.reservation{
+  display: flex;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.reserve{
+
+
+  margin: 20px;
+}
+.reserve h3{
+  color: #333333;
+}
+.reserve h2{
+  color: #FC5B24;
+}
+.reservation img{
+  width: 300px;
+}
+
+.client-testmonials{
+
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+
+}
+
+.client-head{
+  color: #FC5B24;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+.fil-col{
+  padding: 0;
+  margin: 0;
+}
+.asked-questions{
+  background-color: #D4D8DE;
+  padding: 30px;
+
+}
+.que{
+  background-color: white;
+  padding: 0px 10px;
+  margin: 36px 0 !important;
+}
+.fa{
+  color: #FC5B24;
+}
+.fas{
+ color:  #FC5B24;
+}
+.get-quote{
+ background-color: black;
+ color: white;
+ padding: 30px 50px;
+}
+
+input[type="text"]{
+    font-size: 20px;
+  width: 60%;
+}
+
+.submit{
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+
+.main{
+
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 992px){
+
+  .responsive{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .header{
+    padding-top: 20px;
+  }
+  .party-bus img{
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .view-vehicles{
+    text-align: center;
+    padding: 30px;
+  }
+  .view-vehicles p{
+    text-align: center;
+  }
+  .view-vehicles img{
+    padding: 20px 0;
+
+  }
+
+  .efficient{
+    padding: 30px;
+  }
+.client{
+  padding: 20px;
+}
+input[type="text"]{
+  width: 50%;
+}
+
+
+}
+@media screen and (max-width: 768px){
+
+  .header h1{
+    font-size: 35px;
+  }
+
+  input[type="textarea"]{
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 600px){
+  .party-bus img{
+    width: 350px;
+
+
+  }
+  .events ul li a{
+    width: 100%;
+  }
+  .explore h1{
+    font-size: 26px;
+  }
+  .plan-head{
+    font-size: 30px;
+  }
+  .events-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .asked-questions h2, .get-quote h2{
+    font-size: 26px;
+  }
+  .que h3{
+    font-size: 20px;
+  }
+}
