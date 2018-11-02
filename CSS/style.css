@@ -207,7 +207,7 @@ padding: 50px;
   margin-top: 60px !important;
 }
 .group-list{
-  margin: 30px 20px;
+  margin: 30px 20px !important;
 }
 
 .group-list p{
@@ -222,10 +222,7 @@ padding: 50px;
 
 
 }
-.head-padding{
 
-
-}
 .facility h4{
   color: #333333;
   padding: 20px;
@@ -345,6 +342,9 @@ input[type="text"]{
   .get-quote h2{
     font-size: 28px;
   }
+  .asked-questions, .get-quote{
+    height: auto !important;
+  }
 }
 
 
@@ -401,7 +401,7 @@ input[type="text"]{
 input[type="text"]{
   width: 50%;
 }
-.asked-questions, .get-quote{
+.asked-questions{
   height: auto;
 }
 
@@ -422,6 +422,7 @@ input[type="text"]{
   .facilites{
     padding:0 50px !important;
   }
+
 }
 @media screen and (max-width: 600px){
   .party-bus img{
@@ -444,11 +445,10 @@ input[type="text"]{
     flex-wrap: wrap;
   }
   .personal-groups, .events-travel{
-
-   margin: 16px;
-
-   padding: 40px;
-
+    width: 100%;
+    margin: 0 auto;
+   margin: 10px 4px;
+   padding: 40px 16px;
   }
   .group-list{
     margin: 2px;
@@ -457,8 +457,9 @@ input[type="text"]{
     padding: 20px;
   }
   .facilites{
-    padding:0 30px !important;
+    padding:0 20px !important;
   }
+
 
   .client{
     padding: 25px 0;
@@ -469,4 +470,8 @@ input[type="text"]{
   .que h3{
     font-size: 20px;
   }
+  input[type="text-area"]{
+    width: 50%;
+  }
+
 }
