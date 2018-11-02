@@ -152,8 +152,6 @@ margin: 50px 0;
 }
 
 .truck-image{
-
-
 display: flex;
  justify-content: center;
  align-items: center;
@@ -438,11 +436,15 @@ input[type="text"]{
   .explore h1{
     font-size: 26px;
   }
+  .view-para{
+    padding: 16px 10px;
+  }
   .truck-image{
     padding: 10px;
     text-align: left;
 
   }
+
   .plan-head{
     font-size: 30px;
   }
@@ -479,7 +481,7 @@ input[type="text"]{
     font-size: 20px;
   }
   input[type="text-area"]{
-    width: 40%;
+    width: 30%;
   }
 
 }
