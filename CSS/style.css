@@ -457,8 +457,8 @@ input[type="text"]{
 
     width: 100% !important;
 
-   margin: 10px 0px;
-   padding: 40px 0px;
+   margin: 10px 8px;
+   padding: 40px 8px;
   }
   .group-list{
 
@@ -481,7 +481,7 @@ input[type="text"]{
     font-size: 20px;
   }
   input[type="text-area"]{
-    width: 30%;
+    width: auto;
   }
 
 }
