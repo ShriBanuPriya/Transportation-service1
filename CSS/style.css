@@ -308,6 +308,9 @@ input[type="text"]{
     margin: 5px 0;
 
 }
+input[type="textarea"]{
+  margin: 5px 0 !important;
+}
 
 .submit{
   box-shadow: none;
@@ -455,7 +458,7 @@ input[type="text"]{
   }
   .personal-groups, .events-travel{
 
-    width: 100% !important;
+
 
    margin: 10px 8px;
    padding: 40px 8px;
@@ -481,7 +484,8 @@ input[type="text"]{
     font-size: 20px;
   }
   input[type="text-area"]{
-    width: auto;
+    width: 100% !important;
+    min-height: 75px;
   }
 
 }
