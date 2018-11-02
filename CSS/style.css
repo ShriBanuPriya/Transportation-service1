@@ -139,10 +139,8 @@ a:hover{
 .explore p{
   text-align: center;
 }
-.view-vehicles{
+.view-para{
 margin: 50px 0;
-
-
 }
 
 .view-vehicles h3{
@@ -155,7 +153,11 @@ margin: 50px 0;
 
 .truck-image{
 
-padding: 30px;
+
+display: flex;
+ justify-content: center;
+ align-items: center;
+text-align: center;
 }
 
 
@@ -366,11 +368,11 @@ input[type="text"]{
     justify-content: center;
   }
 
-  .view-vehicles{
+  .view-para{
     text-align: center;
     padding: 30px;
   }
-  .view-vehicles p{
+  .view-para p{
     text-align: center;
 
   }
@@ -414,7 +416,7 @@ input[type="text"]{
   }
 
   input[type="textarea"]{
-    width: 50% !important;
+    width: 40% !important;
   }
   .facility{
     padding: 20px 0;
@@ -436,6 +438,11 @@ input[type="text"]{
   .explore h1{
     font-size: 26px;
   }
+  .truck-image{
+    padding: 10px;
+    text-align: left;
+
+  }
   .plan-head{
     font-size: 30px;
   }
@@ -445,13 +452,14 @@ input[type="text"]{
     flex-wrap: wrap;
   }
   .personal-groups, .events-travel{
-    width: 100%;
-    margin: 0 auto;
-   margin: 10px 4px;
-   padding: 40px 16px;
+
+    width: 100% !important;
+
+   margin: 10px 0px;
+   padding: 40px 0px;
   }
   .group-list{
-    margin: 2px;
+
   }
   .efficiency{
     padding: 20px;
@@ -471,7 +479,7 @@ input[type="text"]{
     font-size: 20px;
   }
   input[type="text-area"]{
-    width: 50%;
+    width: 40%;
   }
 
 }
