@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
 body{
 font-family: 'Quattrocento Sans', sans-serif;
-font-weight: 600;
+font-weight: 600 !important;
 color: #676767;
 line-height: 25px;
+}
+body p{
+  color: #333333 !important;
 }
 .container-fluid{
   margin-bottom: 50px !important;
@@ -18,14 +21,11 @@ line-height: 25px;
 height: 560px;
   background-color: #E45522;
   color: white;
-
-}
-.head-col{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 .circle{
   color: white !important;
   font-size: 10px !important;
@@ -64,26 +64,43 @@ li{
   color: white;
   background-color: #E45522;
   padding: 12px;
-
  border-radius: 2px;
 }
 .button:hover{
-
   opacity: .9;
 }
 a{
   text-decoration: none;
+
 }
 a:hover{
-  text-decoration: none;
+  text-decoration: none !important;
   color: rgba(255, 255, 255, 0.9);
 }
-.party-bus{
-  height: 560px;
 
+#demo{
+  height: 560px;
   display: flex;
-  justify-content: center;
   align-items: center;
+ justify-content: center; !important;
+
+}
+.carousel-item img{
+   width: 70% !important;
+margin-left: 120px;
+}
+.carousel-indicators li {
+  display: inline-block;
+  text-indent: 0;
+  background-color: #F1F5F9;
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+       background-color: #fc5b24;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #fc5b24;
+    border-radius: 50%;
 }
 
 .events {
@@ -91,21 +108,17 @@ a:hover{
   margin-bottom: 50px;
   background-color: #F1F5F9;
   padding: 30px;
-
   list-style: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .item {
-
   width: 180px;
   height: 50px;
   line-height: 30px;
-
   font-weight: bold;
   font-size: 1em;
   text-align: center;
@@ -125,32 +138,41 @@ a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .list p{
   padding-top: 12px;
 }
-
-
-.list .fa{
+.plus-icon .fa{
   color: #C4C4C4 !important;
+}
+
+.fa, .fas{
+  transition: all .3s ease-in;
 }
 .fa:hover, .fas:hover{
   opacity: .6;
+  transform: scale(1.1);
 }
+.title{
+  padding: 18px 0;
+
+}
+
+/*  **********   Explore Start *********** */
 .explore{
   width: 30%;
-  margin: 20px auto !important;
+  margin: 0 auto !important;
 }
 .explore h1{
   color: #FC5B24;
   text-align: center;
-  padding-bottom: 16px;
 }
 
 .explore p{
   text-align: center;
 }
+
+/************** View vehicles start ***********/
 .view-para{
 margin: 50px 0;
 }
@@ -160,17 +182,20 @@ margin: 50px 0;
 }
 .view-vehicles p{
   text-align: justify;
-  margin: 30px 0;
+ margin-bottom: 30px;
 }
-
 .truck-image{
-display: flex;
- justify-content: center;
- align-items: center;
-text-align: center;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.truck-image img{
+  width: 100% !important;
+
+
 }
 
-
+/************* 3 columns efficiency Start ***************/
 .efficiency{
   text-align: center;
 display: flex;
@@ -190,6 +215,8 @@ padding: 0 50px;
 .efficient-3{
   align-self: flex-end;
 }
+
+/********* Plan next event with us **************/
 .plan{
 background-color: #F1F5F9;
 padding: 50px;
@@ -198,19 +225,20 @@ padding: 50px;
 .plan-head{
   text-align: center;
   color: #FC5B24;
- padding: 30px 0;
+
 }
 .personal-groups, .events-travel{
 
- margin: 20px;
+margin: 20px;
  text-align: center;
- padding: 60px;
+ padding: 40px;
  background-color: white;
 }
 .personal-groups img, .events-travel img{
   width: 300px;
 
 }
+
 .personal-groups h3, .events-travel h3{
   color: #333333;
   padding-bottom: 20px;
@@ -222,24 +250,60 @@ padding: 50px;
 .group-list{
   margin: 30px 20px !important;
 }
-
+.panel{
+  padding: 0 10px;
+  padding-top: 10px;
+  display: none;
+}
 .group-list p{
 
  text-align: left;
 }
+/*************** 4 columns Facilities  ************/
+
 .facilites{
   padding: 10px 100px;
   display: flex;
   text-align: center;
   justify-content: center;
-
+ animation: fadeInLeft 3s;
 
 }
+
 
 .facility h4{
   color: #333333;
   padding: 20px;
 }
+
+.head-facility{
+   position: relative;
+}
+
+.facility h4 > a:before {
+  content: "";
+  position: absolute;
+
+  width: 30%;
+  margin: 0 auto !important;
+  height: 3px;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+  background: #FC5B24;
+ visibility: hidden
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: text-translate .3s ease-in-out;
+}
+.facility h4 > a:hover:before,
+.facility h4 > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/*************** Reservation ****************/
 .reservation{
   display: flex;
   text-align: center;
@@ -247,16 +311,18 @@ padding: 50px;
   margin: 0 auto;
   padding-bottom: 50px;
   justify-content: center;
+  animation-name: fadeInDown;
+
 }
 .reserve{
   margin: 20px;
 }
 .reserve h3{
   color: #333333;
-  padding: 16px 0;
+
 }
 .reserve h2{
-  color: #FC5B24;
+  color: #FC5B24 !important;
   padding: 16px 0;
 }
 .reserve p{
@@ -264,7 +330,9 @@ padding: 50px;
 }
 .reservation img{
   width: 320px;
+  transition: all .3s ease-in;
 }
+/************** Client Testmonials***************/
 
 .client-testmonials{
 
@@ -283,7 +351,7 @@ padding: 50px;
 
 }
 .client{
-  padding: 10px;
+
 }
 .client p{
   padding: 16px 6px;
@@ -291,9 +359,11 @@ padding: 50px;
 
 
 .fil-col{
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
+
+/************* Footer**************/
 .asked-questions, .get-quote{
   height: 740px !important;
 
@@ -301,18 +371,32 @@ padding: 50px;
 .asked-questions{
   background-color: #D4D8DE;
   padding: 50px;
-
   height: 740px !important;
-}
-.asked-questions h2{
-  padding: 20px 0;
 }
 .que{
   background-color: white;
-  padding: 20px 20px;
-  margin: 20px 0 !important;
+ padding: 12px 10px;
+ margin: 16px 0;
   border-radius: 4px;
+
 }
+
+.que-box{
+ padding: 0 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center !important;
+
+}
+.que-box h5{
+
+  font-weight: 600;
+}
+.panel p{
+
+  font-weight: 500;
+}
+
 .fa, .fas{
   color: #FC5B24;
 }
@@ -320,35 +404,29 @@ padding: 50px;
 .get-quote{
  background-color: black;
  color: white;
- padding: 70px 50px !important;
+ padding: 50px 50px !important;
 }
 .get-quote h2{
-  padding-bottom: 40px;
+
   line-height: 50px;
 }
 
-input[type="text"]{
-    font-size: 26px;
+input[type="text"], input[type="email"], textarea{
+    font-size: 16px;
   width: 60%;
-    margin: 16px 0;
-    border-radius: 2px;
+    margin: 10px 0;
+    border: none;
+    padding: 6px;
 
-}
-input[type="textarea"]{
-
-  border-radius: 2px;
 }
 
 .submit{
   box-shadow: none;
   font-weight: bold;
   width: 120px;
+  border: none;
 }
-
-
-
 .main{
-
   margin: 0 auto;
 }
 
@@ -356,28 +434,7 @@ input[type="textarea"]{
   .transport-header{
     height: auto !important;
   }
-  .personal-groups, .events-travel{
-    margin: 20px;
-    padding: 60px 20px;
-  }
-  .facilites{
-    padding: 10px 40px;
-  }
-  .client p{
-    padding: 16px 0;
-  }
-  .que h4{
-    font-size: 20px;
-  }
-  .get-quote{
-    padding: 26px 50px;
-  }
-  .get-quote h2{
-    font-size: 28px;
-  }
-  .asked-questions, .get-quote{
-    height: auto !important;
-  }
+
 }
 
 
@@ -394,9 +451,20 @@ input[type="textarea"]{
     padding-top: 20px;
   }
   .party-bus img{
+
+    width: 100%;
     display: flex;
 
     justify-content: center;
+  }
+
+  .truck-image img{
+    width: 100% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .view-para{
@@ -408,7 +476,7 @@ input[type="textarea"]{
 
   }
   .view-vehicles img{
-    padding: 20px 0;
+
 
   }
   .facility h4{
@@ -431,9 +499,7 @@ input[type="textarea"]{
 .client{
   padding: 20px;
 }
-input[type="text"]{
-  width: 50%;
-}
+
 .asked-questions{
   height: auto;
 }
@@ -441,8 +507,9 @@ input[type="textarea"]{
   width: 50% !important;
 }
 
-
 }
+
+
 @media screen and (max-width: 768px){
 
   .header h1{
@@ -460,11 +527,13 @@ input[type="textarea"]{
   }
 
 }
+
+
+/**************************For IPHONE ***********************/
+
 @media screen and (max-width: 600px){
   .party-bus img{
-    width: 350px;
-
-
+    width: 430px;
   }
   .events ul li a{
     width: 100%;
@@ -477,8 +546,6 @@ input[type="textarea"]{
   }
   .truck-image{
     padding: 10px;
-    text-align: left;
-
   }
 
   .plan-head{
@@ -490,15 +557,10 @@ input[type="textarea"]{
     flex-wrap: wrap;
   }
   .personal-groups, .events-travel{
-
-
-
    margin: 10px 8px;
    padding: 40px 8px;
   }
-  .group-list{
 
-  }
   .efficiency{
     padding: 20px;
   }
@@ -518,7 +580,41 @@ input[type="textarea"]{
   }
   input[type="text-area"]{
     width: 100% !important;
+  }
+}
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+
+    transform: translate3d(0, -100%, 0);
   }
 
+  to {
+    opacity: 1;
+
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInDown {
+
+  animation-name: fadeInDown;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+
+  animation-name: fadeInLeft;
 }
