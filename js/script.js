@@ -44,6 +44,6 @@ $(document).ready(function(){
             alert("Form Submitted successfully");
           }
         });
-      
+
 
 });
