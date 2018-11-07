@@ -87,7 +87,8 @@ a:hover{
 }
 .carousel-item img{
    width: 70% !important;
-margin-left: 120px;
+margin-left: 20%;
+
 }
 .carousel-indicators li {
   display: inline-block;
@@ -266,7 +267,7 @@ margin: 20px;
   display: flex;
   text-align: center;
   justify-content: center;
- animation: fadeInLeft 3s;
+ animation: fadeInLeft .4s;
 
 }
 
@@ -311,7 +312,7 @@ margin: 20px;
   margin: 0 auto;
   padding-bottom: 50px;
   justify-content: center;
-  animation-name: fadeInDown;
+  animation: fadeInRight .2s;
 
 }
 .reserve{
@@ -371,8 +372,7 @@ margin: 20px;
 .asked-questions{
   background-color: #D4D8DE;
   padding: 50px;
-  height: 740px !important;
-}
+  }
 .que{
   background-color: white;
  padding: 12px 10px;
@@ -434,7 +434,9 @@ input[type="text"], input[type="email"], textarea{
   .transport-header{
     height: auto !important;
   }
-
+.asked-questions{
+  height: auto !important;
+}
 }
 
 
@@ -445,11 +447,15 @@ input[type="text"], input[type="email"], textarea{
     margin: 0 auto;
   }
   .transport-header{
-    height: auto;
+    height: auto !important;
   }
   .header{
     padding-top: 20px;
   }
+  .header ul li{
+    text-align: left;
+  }
+
   .party-bus img{
 
     width: 100%;
@@ -489,6 +495,7 @@ input[type="text"], input[type="email"], textarea{
   .efficiency{
     height: auto;
     padding: 30px !important;
+    animation: bounceIn .3s;
   }
   .efficient{
     padding: 20px 0;
@@ -501,7 +508,7 @@ input[type="text"], input[type="email"], textarea{
 }
 
 .asked-questions{
-  height: auto;
+
 }
 input[type="textarea"]{
   width: 50% !important;
@@ -525,7 +532,12 @@ input[type="textarea"]{
   .facilites{
     padding:0 50px !important;
   }
-
+  input[type="text"], input[type="email"], textarea{
+    width: 80%;
+  }
+.personal-groups img, .events-travel img{
+   width: 80%;
+}
 }
 
 
