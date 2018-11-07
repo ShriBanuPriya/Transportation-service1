@@ -429,7 +429,9 @@ input[type="text"], input[type="email"], textarea{
 .main{
   margin: 0 auto;
 }
-
+form .error{
+  color:#E45522;
+}
 @media screen and (max-width: 1180px){
   .transport-header{
     height: auto !important;
@@ -537,6 +539,9 @@ input[type="textarea"]{
   }
 .personal-groups img, .events-travel img{
    width: 80%;
+}
+.get-quote{
+  height: auto !important;
 }
 }
 

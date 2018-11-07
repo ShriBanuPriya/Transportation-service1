@@ -24,9 +24,10 @@ $(document).ready(function(){
             $("form[name='registration']").validate({
           rules: {
             name: {
-              required: true
-
+              required: true,
+             minlength: 3
             },
+
             email: {
               required: true,
               email: true
@@ -36,7 +37,12 @@ $(document).ready(function(){
             }
           },
           messages: {
-            name: "Please specify your name",
+
+
+            name: {
+       required: "Please specify your name",
+       minlength: "Your Name must be at least 3 characters long"
+     },
             email: "Please specify a valid email address",
            message: "Please specify your message"
           },
